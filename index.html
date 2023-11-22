@@ -11,12 +11,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="srcthird/style.css"/>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather app</title>
   </head>
   <body>
     <div class="card">
+
   <div class="card-body">
   <div class ="container">
     <div class="p-2">   
@@ -32,7 +33,7 @@
           <div class="row">
             <div class="col-5">
               <h1 class="city" id="current-city">Lecce</h1>
-              <p id="date">Sat 27 May, 11:00</p>
+              <h5 id="date">Sat 27 May, 11:00</h5>
             </div>
             <div class="col-7">
               <form class="search-form" id="search-form">
@@ -40,87 +41,42 @@
                   <div class="col-5">
                     <input
                       type="text"
-                      class="form-control"
+                     class="col-sm-20 col-form-label col-form-label-sm"
                       id="input"
                       autofocus="on"
                       placeholder="Enter a city ..."
                     />
                   </div>
-                  <div class="col-3">
+                  <div class="col-5">
                     <button type="submit" class="btn btn-primary" value="search">Search</button>
-              <button type="button" id="currentTemp" class="btn btn-outline-info">Current</button>
+            
+              <button type="button" id="currentTemp" class="btn btn-outline-info">📍</button>
                 </div>
               </form>
             </div>
           </div>
             <div class="weatherTemperature">
-                <strong id="temperature">35 °C</strong>
+                <strong id="temperature"></strong>
                 <span class="temperature">
               </div>
     
 </h2>
 </div>
 <div class="col-5 types">
-<p>
+<img src="" alt="" id="icon" class="float-left" />
     <ul>
         <li>Humidity: <span id="humidity"> 8 </span>%</li>
         <li>Wind: <span id="wind"> 5</span>km/h</li>
         <li><span id="description"> Dizzy</span></li>
     </ul>
-</p>
 </div>
 </div>
 <div class="weather-links">
 </div>
-<div class="row daily">
-    <div class="col day">
-<h3> Mon</h3>
-<h1>🌤</h1>
-<h6 class="temp">Max:21°
-     Min: 17°
-</h6>
-    </div>
-    <div class="col day">
-<h3> Tue</h3>
-<h1>🌥</h1>
-<h6 class="temp">Max:19°
-     Min: 16°
-</h6>
-    </div>
-    <div class="col day">
-<h3> Wed</h3>
-<h1>🌦</h1>
-<h6 class="temp">Max:20°
-     Min: 16°
-</h6>
-    </div>
-    <div class="col day">
-<h3> Thu</h3>
-<h1>🌦</h1>
-<h6 class="temp">Max: 22°
-     Min: 18°
-</h6>
-    </div>
-    <div class="col day">
-<h3> Fri</h3>
-<h1>🌦</h1>
-<h6 class="temp">Max: 22°
-     Min: 19°
-</h6>
-    </div>
-    <div class="col day">
-<h3> Sat</h3>
-<h1>🌦</h1>
-<h6 class="temp">Max: 23°
-     Min: 20°
-</h6>
-    </div>
-</div>
 <hr/>
 </div>
 <p></p>
- <div class="outer-container">
-  <button id="generate">HP quote of the day 🪄</button>
+ <div class="outer-container" id="generate">
   <p></p>
             <p id="quotes"></p>
             <p id="author"></p>
@@ -128,10 +84,13 @@
    </div>
 </div>
 <footer> 
-  This project was coded by Caterina De Paolis 
-  and is open-sourced on <a href="https://github.com/caterinadp/appweather"> GitHub </a>
-  and hosted on <a href="https://main--super-sopapillas-07b587.netlify.app/">  Netlify
+ Coded by Caterina De Paolis, open-sourced on <a href="https://github.com/caterinadp/git-she-codes"> GitHub </a>
+  and hosted on <a href="https://main--caterina-project-799b69.netlify.app/">  Netlify
 </footer>
-<script src="script.js"></script>
+<script src="srcthird/index.js"></script>
+<div></div>
+  <div class="container"> <video>
+          <source src="/downloads/videonuvole.mp4" type="video/mp4">
+    </video>
 </body>
 </html>
